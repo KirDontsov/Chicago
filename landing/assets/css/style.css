@@ -1,0 +1,3374 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.9);
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+.delay {
+  -animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto 0;
+	overflow: hidden;
+	border-radius: 5px;
+	-webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.cover-main {
+	width: 100%;
+	min-height: 200vh;
+	background: #000 url('http://fosstisru-modx.tw1.ru/assets/Nail%20School-2/images/hands.jpg') 50% 10vh no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-attachment: fixed;
+	-webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+}
+
+.parallax-group {
+	-webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 5px 200px;
+	box-sizing: border-box;
+	transition: .5s;
+	z-index: 10;
+}
+
+nav.black {
+	background: rgba(0,0,0,0.8);
+	height: 100px;
+	padding: 5px 100px 10px 100px;
+}
+
+nav .menu-icon {
+	width: 100%;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 25px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+nav .logo {
+	color: #fff;
+	box-sizing: border-box;
+	padding: 20px 50px 0 100px;
+	transition: .5s;
+	text-align: center;
+	position: fixed;
+	left: 100px;
+
+}
+
+nav .logo a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+nav.black .logo {
+	left: 0;
+	transition: .3s;
+}
+
+
+.logo-small {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav .logo a:hover {
+	color: #ede600;
+}
+
+nav ul li a:hover {
+	color: #ede600;
+}
+
+nav.black ul li a:hover {
+	color: #ede600;
+}
+
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0 auto 0;
+	transition: 1s;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #fff;
+	padding: 12px 19px;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+nav.black ul li a {
+	color: #fff;
+}
+
+nav ul li a:focus {
+	outline: none;
+}
+
+nav .phone {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:  20px;
+	list-style: none;
+	line-height: 90px;
+	color: #fff;
+	margin: 0
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 200px;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+nav.black .phone {
+	right: 100px;
+}
+
+.fa-phone {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 35px;
+	left: -23px;
+	color: #ede600;
+}
+
+/* ----------------/.nav --------------------*/
+
+section.header {
+	width: 100%;
+	min-height: 120vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 0 40px 40px 100px;
+	position: relative;
+
+}
+
+fieldset {
+	border: none;
+}
+
+#form-1 {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8); 0 0 no-repeat;
+	display: none;
+	z-index: 10;
+	color: #fff;
+}
+
+#close-1 {
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 22px;
+	color: transparentize($light-black,0.6);
+	transition: color 200ms,
+    transform 500ms;
+}
+
+#close-1:hover, #close-1:focus {
+	transform: rotate(360deg);
+}
+
+
+.center-form {
+	box-sizing: border-box;
+	padding: 0;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#user_name {
+	background: none;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 300px;
+	height: 50px;
+	margin: 40px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+#user_phone {
+	background: none;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 300px;
+	height: 50px;
+	margin: 40px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+#btn_submit {
+	background: none;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 300px;
+	height: 50px;
+	margin: 40px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+input:focus {
+	outline: none;
+}
+
+$size-none: 0;
+$size-base: 12px;
+$size-full: 100%;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+#btn_submit {
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 50px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	transition: .3s;
+}
+
+#btn_submit:hover {
+	transform: scale(0.9);
+}
+
+	
+
+input::placeholder {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.center-form h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 auto 0;
+	text-align: center;
+}
+
+.form-1 .check {
+	font-size: 15px;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0 auto 0;
+	text-align: center;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.form-1 .check a {
+	color: #fff;
+}
+
+.container-message {
+	display: block;
+	position: fixed;
+	left: 50%;
+	bottom: 10%;
+	display: none;
+	z-index: 10;
+	color: green;
+	transform: translate(-50%, -50%);
+}
+
+.container-message p {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 auto 0;
+	text-align: center;
+}
+
+/*-------------------------- form ---------------------------------*/
+
+.content-wrap {
+	box-sizing: border-box;
+	padding: 0;
+	position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.fly-in-text {
+	list-style: none;
+}
+
+.fly-in-text-2 {
+	list-style: none;
+}
+
+.fly-in-text li {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 5em;
+	color: #ede600;
+	opacity: 1;
+	transition: all 3s ease;
+	letter-spacing: -20px;
+}
+
+.fly-in-text-2 li {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 5em;
+	color: #fff;
+	opacity: 1;
+	transition: all 3s ease;
+	letter-spacing: -20px;
+}
+
+.fly-in-text li:nth-child(7) {
+	margin-right: 0;
+}
+
+.fly-in-text-2 li:nth-child(11) {
+	margin-right: 0;
+}
+
+.content-hidden .fly-in-text li { opacity: 0; }
+.content-hidden .fly-in-text li:nth-child(1) { transform: translate3d(-80px,0,0); }
+.content-hidden .fly-in-text li:nth-child(2) { transform: translate3d(-50px,0,0); }
+.content-hidden .fly-in-text li:nth-child(3) { transform: translate3d(-30px,0,0); }
+.content-hidden .fly-in-text li:nth-child(4) { transform: translate3d(-0px,0,0); }
+.content-hidden .fly-in-text li:nth-child(5) { transform: translate3d(30px,0,0); }
+.content-hidden .fly-in-text li:nth-child(6) { transform: translate3d(50px,0,0); }
+.content-hidden .fly-in-text li:nth-child(7) { transform: translate3d(80px,0,0); }
+.content-hidden .btn { opacity: 0; transform: translate3d(0,-30,0); }
+
+.content-hidden .fly-in-text-2 li { opacity: 0; }
+.content-hidden .fly-in-text-2 li:nth-child(1) { transform: translate3d(-80px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(2) { transform: translate3d(-60px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(3) { transform: translate3d(-50px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(4) { transform: translate3d(-20px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(5) { transform: translate3d(-10px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(6) { transform: translate3d(0,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(7) { transform: translate3d(10px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(8) { transform: translate3d(20px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(9) { transform: translate3d(50px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(10) { transform: translate3d(60px,0,0); }
+.content-hidden .fly-in-text-2 li:nth-child(11) { transform: translate3d(80px,0,0); }
+.content-hidden .btn { opacity: 0; transform: translate3d(0,-30,0); }
+
+
+/*---------------------------- fly-in-text -------------------------------*/
+
+h1 {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	padding-top: 200px;
+	word-spacing: -3px;
+	box-sizing: border-box;
+	margin: 0;
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+	transition: .3s;
+
+}
+
+.head-p {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	word-spacing: -3px;
+	padding-top: 50px;
+	box-sizing: border-box;
+	margin: 0;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.yellow { color: #ede600; }
+
+.yellow-p { color: #ede600; }
+
+/* ----------------/.header --------------------*/
+
+.btn {
+	position: absolute;
+	background: #fde910;
+	width: 350px;
+	height: 65px;
+	margin: 40px 0 0 45px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	position: relative;
+	transition: all 1s ease 3s;
+}
+
+.btn p {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.fa-long-arrow-right {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+}
+
+/* ----------------/.btn --------------------*/
+
+.cover {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover.png');
+	width: 100%;
+	height: 121px;
+	z-index: 1;
+}
+
+.active {
+  color: #ede600;
+  border: none;
+  border-radius: 50px;
+  line-height: 50px;
+  
+}
+
+.active-text {
+  color: #ede600;
+  text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
+}
+
+/* ----------------/.active js --------------------*/
+
+section.content {
+	background: #fff;
+	margin: 0 auto 0;
+	padding: 0;
+	position: relative;
+	z-index: 0;
+}
+
+section .heading {
+	position: relative;
+	margin: 0 80px 0 50px;
+	padding: 50px 10px 20px 270px;
+	box-sizing: border-box;
+	display: block;
+}
+
+section .heading h2 {
+	font-size: 39.99px;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	color: #e10d7d;
+}
+
+section .heading p.itallic {
+	margin-top: -10px;
+	padding: 0 0 0 0;
+	box-sizing: border-box;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 20px;
+	text-transform: lowercase;
+	color: #e10d7d;
+}
+
+/* ----------------/.heading --------------------*/
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-left1.png');
+	width: 210px;
+	height: 507px;
+}
+
+.C1 {
+	position: absolute;
+	top: 0;
+	right: 20%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/s1.png') 0 0 no-repeat;
+	width: 215px;
+	height: 220px;
+	transition: .3s;
+	z-index: 100;
+}
+
+.C1:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+.circle-small-1 {
+	position: absolute;
+	top: 0;
+	right: 10%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/circle-s2.png') 0 0 no-repeat;
+	width: 130px;
+	height: 130px;
+}
+
+.circle-small-2 {
+	position: absolute;
+	top: 250px;
+	right: 5%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/circle-s1.png') 0 0 no-repeat;
+	width: 215px;
+	height: 220px;
+}
+
+.circle-2 {
+	position: absolute;
+	top: 0;
+	right: -80px;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-right.png');
+	height: 921px;
+	width: 462px;
+}
+
+.H {
+	position: absolute;
+	top: 800px;
+	left: 40%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/h.png') 0 0 no-repeat;
+	height: 150px;
+	width: 120px;
+	transform: rotate(10deg);
+	transition: .3s;
+}
+
+.H:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+.I {
+	position: absolute;
+	top: 0;
+	right: 40%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/i.png') 0 0 no-repeat;
+	height: 220px;
+	width: 120px;
+	transform: rotate(10deg);
+	transition: .3s;
+	z-index: 100;
+}
+
+.I:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+.scissors {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/scissors.png') 0 0 no-repeat;
+	height: 520px;
+	width: 120px;
+}
+
+.crew {
+	position: absolute;
+	top: 70px;
+	right: 15%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/crew.png') 0 0 no-repeat;
+	height: 220px;
+	width: 220px;
+}
+
+.C2 {
+	position: absolute;
+	top: 700px;
+	right: -20px;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/s2.png') 0 0 no-repeat;
+	height: 220px;
+	width: 220px;
+	transition: .3s;
+	z-index: 100;
+}
+
+.C2:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+section .black-prices .cover-a {
+	position: absolute;
+	top: -100px;
+	left: 200px;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/a.png');
+	width: 244px; 
+	height: 249px;
+	z-index: 100;
+	transition: 2s;
+}
+
+.cover-a:hover {
+	transform: rotate(360deg);
+	cursor: pointer;	
+}
+
+.G {
+	position: absolute;
+	top: -300px;
+	left: 10%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/g.png') 0 0 no-repeat;
+	height: 220px;
+	width: 220px;
+	transition: .3s;
+	z-index: 100;
+}
+
+.G:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+.redken {
+	position: absolute;
+	top: -500px;
+	left: 50%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/redken.png') 0 0 no-repeat;
+	height: 220px;
+	width: 350px;
+	transition: .3s;
+	transform: translateX(-50%);
+}
+
+.O {
+	position: absolute;
+	top: -300px;
+	right: 10%;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/o.png') 0 0 no-repeat;
+	height: 220px;
+	width: 200px;
+	z-index: 100;
+	transition: .3s;
+}
+
+.O:hover {
+	transform: scale(0.8);
+	cursor: pointer;	
+}
+
+
+.cover-4 {
+	position: absolute;
+	top: -200px;
+	left: 0;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover.png');
+	width: 100%;
+	height: 121px;
+	z-index: 1;
+}
+
+.col-2-wrap-1 {
+	max-width: 1000px;
+	min-height: 400px;
+	margin: 0;
+	padding: 0 0 40px 250px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+.col-2-1 {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+  	margin-right: -4px;
+  	margin-top: -4px;
+  	margin-bottom: 0;
+}
+
+.col-2-wrap-1:after {
+	content: '';
+	display: block;
+	width: 100%;
+}
+
+.text-col-2 {
+	color: #e10d7d;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 10px 10px 0;
+}
+	
+.text-col-2 p {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin: 0;
+	padding: 0 10px 10px 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.text-col-2 img {
+	margin: 10px 500px 10px 0;
+}
+
+/* ----------------/.col-2-wrap --------------------*/
+
+section.purple {
+	position: relative;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-2.png');
+	margin: 0 auto 0;
+	padding: 0;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+	position: relative;
+	width: 100%;
+	min-height: 1719px;
+	overflow: hidden;
+	bottom: -80px;
+	z-index: 2;
+}
+
+section .heading-purple {
+	margin: 50px 80px 0 150px;
+	padding: 100px 10px 30px 0;
+	box-sizing: border-box;
+	display: block;
+}
+
+section .heading-purple h2 {
+	font-size: 39.99px;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+section .heading-purple p.itallic {
+	margin-top: -10px;
+	padding: 0 0 0 0;
+	box-sizing: border-box;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 20px;
+	text-transform: lowercase;
+	color: #e10d7d;
+}
+
+/* ----------------/.heading --------------------*/
+
+
+.col-2-wrap {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0;
+	padding: 0 0 50px 150px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+}
+
+.col-2 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 30%;
+  	margin-right: -4px;
+  	margin-top: -4px;
+  	margin-bottom: 200px;
+}
+
+.col-2-wrap:after {
+	content: '';
+	display: block;
+}
+
+.text-col-2-purple {
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px 10px 40px 0;
+}
+.text-col-2-purple h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+}
+
+.text-col-2-purple ul {
+	font-size: 16px;
+	padding: 10px 10px 10px 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.text-col-2-purple img {
+	padding-bottom: 20px;
+
+}
+
+/* ----------------/.col-2-wrap --------------------*/
+
+.col-right {
+	padding-top: 10px;
+	position: relative;
+}
+
+.text-right {
+	position: absolute;
+	right: 150px;
+	top: -200px;
+	width: 600px;
+}
+
+.text-right h2 {
+	font-size: 39.99px;
+	line-height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.text-right p {
+	margin: 0;
+	padding: 10px;
+	color: #fff;
+}
+
+.text-right h3 {
+	font-size: 25px;
+	line-height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.text-right li {
+	font-size: 16px;
+	padding: 0 10px 0 0;
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 600px;
+	color: #fff;
+}
+
+ .text-right ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	line-height: 1.5em;
+    list-style-type: none;
+    position: relative;
+}
+
+.text-right ul > li:before {
+	content: '';
+    background: #fff700 0 50% no-repeat;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    margin: 30px -50px;
+    list-style-position: outside;
+}
+
+.col-right img {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	min-height: 487px;
+	min-width: 570px;
+	border-radius: 5px;
+
+}
+
+.heading-3 h2 {
+	line-height: 30px;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+	padding: 200px 0 0 0;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.heading-3 p {
+	line-height: 30px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	padding: 40px;
+	margin-top: 0;
+}
+
+
+/* ----------------/.col-right --------------------*/
+
+
+section .bg-gray {
+	background-image: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/dg-fon.jpg'); 
+	min-height: 1000px;
+	position: relative;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 1;
+}
+
+.col-wrap {
+	max-width: 1200px;
+	margin: 0 auto 115px;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+}
+
+.col-wrap .dash {
+	padding: 0;
+	background: #ede600;
+	content: '';
+	width: 30px;
+	height: 3px;
+	margin: 0 auto 0;
+
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+	width:33.33%;
+  	margin-right:-5px;
+  	margin-top: -60px;
+	margin-bottom: 0;
+	padding-top: 0;
+	text-align: center;
+}
+
+.col-inside {
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+
+.col-wrap:after {
+	content: '';
+	display: block;
+}
+
+.col-inside h2 {
+	margin: 15px 0 13px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #e10d7d;
+	text-align: center;
+}
+
+.col-inside p {
+	margin: 15px 0 13px 0;
+	font-size: 18px;
+	color: #fff;
+}
+
+.bg-gray h3 {
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0 0 0;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+/* ----------------/.col-wrap --------------------*/
+
+.white {
+	position: relative;
+}
+
+.heading-4 {
+	margin: 15px auto 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #e10d7d;
+	text-align: center;
+	padding-top: 250px;
+}
+
+.col-2-wrap-white {
+	max-width: 1400px;
+	height: auto;
+	margin: 0;
+	padding: 0 0 40px 350px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+	color: #4e4e4e;
+}
+
+.col-2-wrap-white:after {
+	content: '';
+	display: block;
+	width: 100%;
+}
+
+.col-2-wrap-white p,
+.col-2-wrap-white h3 {
+	color: #e10d7d;
+	text-align: left;
+}
+
+.col-2-wrap-white h3 {
+	text-transform: uppercase;
+}
+
+.col-2-wrap-white .col-4 {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.col-2-white {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 30%;
+  	margin-right: -4px;
+  	margin-top: -4px;
+  	margin-bottom: 0;
+}
+
+.col-2-white ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.col-2-white li {
+	font-size: 16px;
+	padding: 0 10px 0 0;
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 350px;
+	text-transform: uppercase;
+	color: #e83493;
+}
+
+.col-2-white li:before {
+	background-color:#ede600;
+	width:30px;
+	height:3px;
+	content:"";
+	float:left;
+	margin:-10px 0 0 0;
+	overflow:hidden;
+}
+
+.circle-left-white {
+	position: absolute;
+	top: 0;
+	left: -100px;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-left2.png');
+	width: 414px;
+	height: 958px;
+	z-index: 1;
+}
+
+.col-2-wrap-white .fa {
+	width: 60px;
+	height: 60px;
+	margin: 10px auto 10px;
+	border-radius: 100px;
+	padding: 10px 0;
+}
+
+.col-2-wrap-white .fa i {
+	display: inline-block;
+	line-height: 60px;
+}
+.col-2-wrap-white .fa:before {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	padding: 20px;
+	color: #272833 !important;
+    text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
+}
+
+#head-white {
+	padding-top: 0;
+}
+
+/*----------------------------------*/
+
+.reviews .heading-4 > h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.reviews .sliderA {
+	margin: 0 auto 0;
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    text-align: center;
+}
+
+.reviews .sliderA > input {
+    display: none;
+}   
+
+.reviews .sliderA > input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(180, 180, 180, 0.8);
+    font-size: 0;
+
+    cursor: pointer;
+
+    z-index: 100;
+    position: relative;
+
+    margin-right: 4px;
+    top: 90%;
+
+    transition: background 0.8s ease-out 0s;
+}
+
+.reviews .sliderA > input + label:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+
+.reviews .sliderA > input:checked + label {
+    background: rgba(232, 52, 147, 0.8);
+}
+
+.reviews .sliderA > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.reviews .sliderA > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.reviews .sliderA > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.reviews .sliderA > div > h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #e83493;
+	text-align: left;
+	position: absolute;
+    top: 10px;
+    left: 50px;
+    padding: 1px;
+    box-sizing: border-box;
+    width: 600px;
+    text-transform: uppercase;
+}
+
+.reviews .sliderA > div > h3 {
+	font-size: 20px;
+	color: #e83493;
+	text-align: left;
+	position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 1px;
+    box-sizing: border-box;
+    width: 600px;
+    text-transform: uppercase;
+}
+
+.reviews .sliderA > div > p {
+	font-size: 16px;	
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    color: #4e4e4e;
+    text-align: left;
+    padding: 1px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.reviews .sliderA > div > img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	max-width: 350px;
+
+}
+
+.reviews .sliderA > input + label + div + label {
+    display: none;
+}
+
+.reviews .sliderA > input:checked + label + div + label {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------*/
+
+
+section .purple-program-of-course {
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-big-purple.png') 0 0 no-repeat;
+	width: 100%;
+	height: 932px;
+	position: relative;
+	z-index: 3;
+}
+
+.container-2-col {
+	max-width: 1600px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 200px 0 40px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+}
+
+.container-2-col:after {
+	content: '';
+	display: block;
+}
+
+section .purple-program-of-course .col-left {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 50%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding: 0 50px 0 50px;
+}
+
+section .purple-program-of-course .col-right {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 50%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding: 0 50px 0 50px;
+}
+
+section .purple-program-of-course .heading-5 > h2 {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section .purple-program-of-course .col-inside {
+	padding: 0 50px 0 50px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+section .purple-program-of-course .col-inside ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	line-height: 1.5em;
+    list-style-type: none;
+    position: relative;
+}
+
+section .purple-program-of-course .col-inside ul > li:before {
+	content: '';
+    background: #fff700 0 50% no-repeat;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    margin: 15px -50px;
+    list-style-position: outside;
+}
+
+/*-----------------------------------------------------------------*/
+
+section .black-prices {
+	background: #000;
+	margin-top: -120px;
+	box-sizing: border-box;
+	padding-bottom: 200px;
+	position: relative;
+	z-index: 0.2;
+}
+
+section .black-prices > .heading-black h2 {
+	color: #fff;
+	padding: 200px 210px 40px 210px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+
+}
+
+section .black-prices .conteiner-3-cols {
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 40px 0;
+	box-sizing: border-box;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+section .black-prices .conteiner-3-cols:after {
+	content: '';
+	display: block;
+}
+
+section .black-prices .col-3 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 30%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	position: relative;
+  	text-align: left;
+}
+
+section .black-prices .col-3 .col-inside-3-1 {
+	padding: 0 30px 0 30px;
+	box-sizing: border-box;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+section .black-prices .col-3 .col-inside-3-1 h3 {
+	color: #fff;
+	font-size: 1.5em;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+section .black-prices .col-3 p {
+	color: #f1f1f1;
+	padding: 0 30px 0 30px;
+	box-sizing: border-box;
+}
+
+section .black-prices .col-3 .col-inside-3-1 ul {
+	list-style-type: none;
+
+}
+
+section .black-prices .col-3 .col-inside-3-1 ul > li {
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+section .black-prices .col-3 .col-inside-3-1 ul > li span {
+	color: #c4c4c4;
+}
+
+section .black-prices .col-3-ways {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 33.33%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	position: relative;
+  	text-align: left;
+}
+
+section .black-prices .col-3-ways h3 {
+	color: #fff;
+	font-size: 1.5em;
+	padding: 0 30px;
+	box-sizing: border-box;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 50px 10px 50px 10px;
+	height: 2em;
+	text-align: center;
+}
+
+section .black-prices .col-3-ways p {
+	color: #c4c4c4;
+	font-size: 1.2em;
+	padding: 0 30px;
+	box-sizing: border-box;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+section .black-prices .col-3-ways .col-inside-3-ways {
+	text-align: center;
+	position: relative;
+}
+
+section .black-prices .col-3-ways:nth-child(2) p {
+	text-align: center;
+}
+
+section .black-prices .col-3-ways span {
+	color: #fff;
+	font-size: 2em;
+}
+
+section .black-prices .col-3-ways img{
+	min-width: 100px;
+	height: 100px;
+	margin: 20px auto 40px;
+}
+section .black-prices .col-3-ways .col-inside-3-ways::before {
+	border: 5px solid #fff;
+	border-radius: 200px;
+	width: 200px;
+	height: 200px;
+	content: '';
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 30px #c4c4c4,
+	inset 0 0 30px #c4c4c4;
+}
+
+/*------------------------------------------------*/
+
+section .black-prices .col-3 .col-inside-3-2 {
+	margin-top: 40px;
+}
+
+section .black-prices .col-3 .col-inside-3-2 h3 {
+	color: #fff;
+	padding: 20px 100px 0 100px;
+	box-sizing: border-box;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 16px 0;
+}
+
+section .black-prices .col-3 .col-inside-3-2 p {
+	padding: 20px 100px 0 100px;
+	box-sizing: border-box;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+section .black-prices .col-3 .col-inside-3-2 span {
+	color: #c4c4c4;
+}
+
+/*------------------------------------------------*/
+
+section .black-prices .col-3 .col-inside-3-3 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+section .black-prices .col-3 .col-inside-3-3 p {
+	padding: 20px 70px 0 70px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	margin: 16px 0;
+}
+
+section .black-prices .col-3 .square-left {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	border-top: #fff solid 2px;
+	border-left: #fff solid 2px;
+	border-bottom: #fff solid 2px;
+	border-radius: 3px;
+	width: 100px;
+	height: 210px;
+}
+
+section .black-prices .col-3 .square-right {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	border-top: #fff solid 2px;
+	border-right: #fff solid 2px;
+	border-bottom: #fff solid 2px;
+	border-radius: 3px;
+	width: 100px;
+	height: 210px;
+}
+
+/*------------------------------------------------*/
+
+section .black-prices .col-3 .col-inside-3-3 .btn-small {
+	font-weight: 300;
+	background: #fff700;
+	width: 240px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 0 auto 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+	transition: .3s;
+
+}
+section .black-prices .col-3 .col-inside-3-3 .btn-small:hover {
+	box-shadow: none;
+	transform: scale(0.9);
+}
+
+
+section .black-prices .col-3 .col-inside-3-3 .btn-small p {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 300;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+section a {
+	line-height: 50px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+
+section a:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+section .black-prices .col-3 .col-inside-3-3 .btn-small .fa-long-arrow-right {
+	position: absolute;
+	top: 16px;
+	right: 10px;
+}
+
+/*---------------------------------------------------------------*/
+
+section .purple-our-works {
+	width: 100%;
+	height: 887px;
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-big-purple-3.png') 0 0 no-repeat;
+	position: relative;
+	top: -120px;
+}
+
+section .purple-our-works .conteiner-3-cols {
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 40px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+}
+
+section .purple-our-works .conteiner-3-cols:after {
+	content: '';
+	display: block;
+}
+
+section .purple-our-works .heading-our-works h3 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 40px;
+	box-sizing: border-box;
+	padding: 200px 50px 40px 50px;
+	text-align: center;	
+	margin: 0 auto 0;
+	text-transform: uppercase;	
+}
+
+/*----------------------------------------------*/
+
+section .white-reviews {
+	position: relative;
+}
+
+section .white-reviews .heading-white-reviews {
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+section .white-reviews .heading-white-reviews h2 {
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #e83493;
+	padding: 0 20px;
+}
+
+section .white-reviews .space {
+	width: 770px;
+	height: 500px;
+	margin: 300px auto 0;
+}
+
+iframe {
+	width: 770px;
+	height: 500px;
+	margin: 0 auto 0;
+}
+
+
+/*----------------------------------------------*/
+
+section .faq {
+	padding-bottom: 200px;
+	box-sizing: border-box;
+	clear: both;
+	min-height: 1700px;
+}
+
+section .faq .questions {
+	max-width: 1000px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 0 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 0;
+	border-bottom: 1px solid #e5097f;
+}
+
+section .faq .questions:after {
+	content: '';
+	display: block;
+}
+
+section .faq .questions .question-1 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 40px;
+  	box-sizing: border-box;
+}
+
+section .faq .questions .question-2 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 40px;
+  	box-sizing: border-box;
+}
+
+section .faq .questions .question-3 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 40px;
+  	box-sizing: border-box;
+}
+
+section .faq .questions .question-4 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 40px;
+  	box-sizing: border-box;
+}
+
+section .faq .questions .question-5 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 40px;
+  	box-sizing: border-box;
+}
+
+
+section .faq .questions .down-arrow {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 10%;
+  	margin-right: -4px;
+  	margin-bottom: 0;
+  	margin-top: 0;
+  	padding-top: 0;
+  	cursor: pointer;
+}
+
+#hidden-1 {
+	display: none;
+}
+
+#hidden-2 {
+	display: none;
+}
+
+#hidden-3 {
+	display: none;
+}
+
+#hidden-4 {
+	display: none;
+}
+
+#hidden-5 {
+	display: none;
+}
+
+section .faq .heading-faq h2 {
+	font-size: 40px;
+	font-weight: bold;
+	display: block;
+	color: #e5097f;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section .faq .questions h3 {
+	font-size: 20px;
+	display: block;
+	font-weight: normal;
+	width: 900px;
+	color: #e5097f;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	cursor: po
+}
+
+section .faq .questions .down-arrow img {
+	margin: 0 auto 0;
+	padding-top: 0;
+	padding-left: 50px;
+}
+
+/*---------------------------------------------------------------*/
+
+.model {
+	position: relative;
+}
+
+.model-form {
+	position: absolute;
+	top: 230px;
+	left: 10%;
+	background: #e5097f;
+	width: 470px;
+	height: 523px;
+	z-index: 2;
+	border-radius: 5px;
+}
+
+.model-form h2 {
+	color: #fff;
+	font-size: 22px;
+	text-align: left;
+	width: 270px;
+	margin: 20px auto 0;
+	text-transform: uppercase;
+}
+
+.bottom-form {
+	margin: 0 auto 0;
+	box-sizing: border-box;
+	padding: 50px;
+	text-align: center;
+	align-items: center;
+}
+
+.bottom-form p {
+	font-size: 14px;
+	color: #fff;
+	line-height: 5px;
+	box-sizing: border-box;
+	margin: 40px 0 0 0;
+}
+
+.bottom-form a {
+	color: #fff;
+	text-decoration: underline;]
+	line-height: 2px;
+}
+
+#user_name2 {
+	background: none;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 270px;
+	height: 50px;
+	margin: 40px auto 0;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+}
+
+#user_phone2 {
+	background: none;
+	display: block;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 270px;
+	height: 50px;
+	margin: 40px auto 0;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+}
+
+#btn_bottom {
+	background: #fff700;
+	display: block;
+	border: none;
+	width: 270px;
+	height: 50px;
+	margin: 40px auto 0;
+	padding: 0;
+	color: #000;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+#btn_bottom:hover {
+	transform: scale(0.9);
+}
+
+.container-message2 {
+	background: rgba(0,0,0,0.8);
+	width: 300px;
+	height: 100px;
+	display: block;
+	position: relative;
+	display: none;
+	color: green;
+}
+
+.container-message2 p {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: 'Code Pro', "Roboto", Helvetica, sans-serif;
+	font-weight: 300;
+	padding: 30px 10px 10px 10px;
+	margin: 0 auto 0;
+	text-align: center;
+}
+
+
+section .model .heading-model {
+	margin: 150px auto 0;
+	padding: 50px 150px 50px 50px;
+	float: right;
+	max-width: 700px;
+	clear: both;
+}
+
+section .model .heading-model h2 {
+	font-size: 40px;
+	font-weight: bold;
+	display: block;
+	color: #e5097f;
+	text-transform: uppercase;3
+
+}
+section .model .heading-model p {
+	font-size: 20px;
+	display: block;
+	font-weight: normal;
+	color: #e5097f;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+
+section .model .img-model {
+	margin: 0 auto 0;
+	box-sizing: border-box;
+	padding: 50px;
+	position: absolute;
+	top: 400px;
+	right: 100px;
+	z-index: 1;
+}
+
+section .model .img-model img {
+	min-width: 769px;
+	min-height: 449px;
+}
+
+/*---------------------------------------------*/
+
+section .purple-big-last {
+	background-image: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-big-purple-4.png');
+	max-width: 1600px;
+	min-height: 1050px;
+	position: relative;
+}
+
+section .purple-big-last .container-4-cols {
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 0 0;
+	box-sizing: border-box;
+	padding-bottom: 0;
+
+}
+
+section .purple-big-last .container-4-cols h2 {
+	text-align: center;
+	font-size: 30px;
+	padding: 80px 30px 30px 30px;
+	box-sizing: border-box;
+}
+
+section .purple-big-last .container-4-cols:after {
+	content: '';
+	display: block;
+}
+
+section .purple-big-last .container-4-cols .col-4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	height: auto;
+	content: '';
+	font-size: 0;
+	margin-right: -4px;
+}
+
+section .purple-big-last .container-4-cols .col-4 .col-4-inside {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+section .purple-big-last .container-4-cols .col-4 .col-4-inside img {
+	max-width: 270px;
+	max-height: 155px;
+	border-radius: 5px;
+	
+}
+
+section .purple-big-last .container-4-cols .col-4 .col-4-inside .dash {
+	width: 30px;
+	height: 3px;
+	background: yellow;
+	padding: 0;
+	margin: 30px 10px 20px 0;
+}
+
+section .purple-big-last .container-4-cols .col-4 .col-4-inside h4 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0;
+	padding: 0 10px 10px 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+section .address {
+	margin: 50px 50px 0 50px;
+}
+
+section .purple-big-last .address .heading-address h2 {
+	text-align: center;
+	font-size: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+section .purple-big-last .address .container-3-cols-address {
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 0 0;
+	box-sizing: border-box;
+	padding-bottom: 0;
+}
+
+section .purple-big-last .address .container-3-cols-address:after {
+	content: '';
+	display: block;
+}
+
+section .purple-big-last .address .container-3-cols-address .col-3-address {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.33%;
+	height: auto;
+	content: '';
+	font-size: 0;
+	margin-right: -4px;
+	text-align: center;
+}
+
+section .purple-big-last .address .container-3-cols-address .col-3-address .col-3-inside-address {
+	padding: 5px; 
+	box-sizing: border-box;
+	margin: 0 auto 0;
+}
+
+section .purple-big-last .address .container-3-cols-address .col-3-address ul {
+	font-size: 20px;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: left;
+	list-style-type: none; 
+}
+
+
+
+section .purple-big-last .address .container-3-cols-address .col-3-address li.location:before {
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/location.png');
+	width:35px;
+	height:35px;
+	background-repeat: no-repeat;
+	content:"";
+	float:left;
+	margin:0 10px 0 0;
+	overflow:hidden;
+}
+
+section .purple-big-last .address .container-3-cols-address .col-3-address li.phone-call {
+	margin: 0 30% 0 30%;
+}
+
+section .purple-big-last .address .container-3-cols-address .col-3-address li.phone-call:before {
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/phone-call.png');
+	width:35px;
+	height:35px;
+	background-repeat: no-repeat;
+	content:"";
+	float:left;
+	margin:0 10px 0 0;
+	overflow:hidden;
+}
+
+
+section .purple-big-last .address .container-3-cols-address .col-3-address li.mail:before {
+	background: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/mail.png');
+	width:35px;
+	height:35px;
+	background-repeat: no-repeat;
+	content:"";
+	float:left;
+	margin:0 10px 0 0;
+	overflow:hidden;
+}
+
+/*-------------------------------------------------------*/
+
+section .map {
+	max-width: 1600px;
+	min-height: 680px;
+	content: '';
+	position: relative;
+}
+
+/*-------------------------------------------------------*/
+
+section .instagramm {
+	background-image: url('http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/cover-big-purple-5.jpg');
+	width: 100%;
+	min-height: 785px;
+}
+
+section .instagramm .heading-purple-inst h2 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding: 150px 300px 50px 300px;
+	margin: 0;
+}
+
+
+section .instagramm .container-4-cols {
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto 0;
+	padding: 40px 0 0 0;
+	box-sizing: border-box;
+	padding-bottom: 0;
+
+}
+
+section .instagramm .container-4-cols:after {
+	content: '';
+	display: block;
+}
+
+section .instagramm .container-4-cols .col-4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	height: auto;
+	content: '';
+	font-size: 0;
+	margin-right: -4px;
+}
+
+section .instagramm .container-4-cols .col-4 .col-4-inside {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+section .instagramm .container-4-cols .col-4 .col-4-inside img {
+	max-width: 270px;
+	max-height: 275px;
+	border-radius: 5px;
+	
+}
+
+/*-------------------------------------------*/
+
+footer {
+	background: #000;
+	max-width: 1600px;
+	min-height: 118px;
+	box-sizing: border-box;
+	padding: 10px 80px;
+	margin: 0 auto 0;
+	position: relative;
+	text-align: center;
+}
+
+footer:after {
+	content: '';
+	display: block;
+}
+
+footer .icon-angle {
+	color: #fff;
+	border-radius: 50px;
+	border: 2px solid #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -5px;
+	margin: 0 auto 0;
+	padding: 0;
+	cursor: pointer;
+	transition: .3s;
+}
+
+footer .icon-angle:hover {
+	color: yellow;
+	border: 2px solid yellow;
+	transform: scale(0.8);
+}
+
+footer .copy {
+	display: inline-block;
+	vertical-align: middle;
+	width: 45%;
+	color: #ababab;
+	font-size: 0;
+	margin-right: -5px;
+	text-align: left;
+}
+
+footer .privacy {
+	display: inline-block;
+	vertical-align: middle;
+	width: 45%;
+	font-size: 0;
+	margin-right: -5px;
+	text-align: right;
+	transition: .3s;
+}
+
+footer p {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	line-height: 118px;
+	text-transform: uppercase;
+}
+
+footer a {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #ababab;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #fff700;
+}
+
+footer .privacy:hover {
+	transform: scale(0.9);
+}
+
+/*---------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #bbb;
+}
+
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/*-------------------------------------------------------*/
+
+section .purple-our-works .slider-our-works .slideshow-container .mySlides .conteiner-3-cols {
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+section .purple-our-works .slider-our-works .slideshow-container .mySlides .conteiner-3-cols:after {
+	content: '';
+	display: block;
+}
+
+section .purple-our-works .slider-our-works .slideshow-container .mySlides .conteiner-3-cols .col-3 {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	margin-right: -4px;
+	width: 33.33%;
+}
+
+section .purple-our-works .slider-our-works .slideshow-container .mySlides .conteiner-3-cols .col-3 .col-3-inside {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+section .purple-our-works .slider-our-works .slideshow-container .mySlides .conteiner-3-cols .col-3 .col-3-inside img {
+  width: 100%;
+  height: auto;
+}
+
+/*-----------------------------------------------------------*/
+
+	@media (max-width: 1540px) {
+		nav {
+			padding: 5px 10px;
+		}
+
+		nav.black {
+			padding: 5px 10px;
+		}
+
+		nav .logo {
+			padding: 20px 0 0 50px;
+		}
+
+		nav.black .phone {
+			right: 50px;
+		}
+
+		nav .phone {
+			right: 150px;
+		}
+
+		nav {
+			padding: 0;
+		}
+
+	}
+
+		@media (max-width: 1480px) {
+			nav {
+				padding: 5px 10px;
+			}
+
+			nav.black {
+				padding: 5px 10px;
+			}
+
+			nav.black .phone {
+				right: 50px;
+			}
+
+			nav {
+				padding: 0;
+			}
+
+			.C2 {
+				display: none;
+			}
+
+			.scissors {
+				display: none;
+			}
+
+		}
+
+			@media (max-width: 1480px) {
+				nav .logo {
+					left: 0;
+				}
+			}
+
+				@media (max-width: 1285px) {
+					nav .phone {
+						left: 60%;
+						top: 0;
+						transform: translate(-50%);
+					}
+
+					nav.black .phone {
+						top: 0;
+						transform: translate(-50%);
+					}
+
+					nav {
+						background: rgba(0,0,0,0.8); 
+					}
+
+					.logo { 
+						position: fixed;
+						top: 0;
+						left: 50px;
+						margin-top: 10px;
+					}
+
+					nav .logo {
+						left: 50px;
+					}
+
+					nav.black .logo {
+						left: 50px;
+					}
+
+					nav ul {
+						max-height: 0px;
+						background: rgba(0,0,0,0.8); 
+					}
+
+					nav.black ul { background: rgba(0,0,0,0.8); }
+
+					.showing {
+						max-height: 31.5em;
+						width: 100%;
+						margin-top: 8px;
+					}
+
+					nav ul li {
+						box-sizing: border-box;
+						width: 100%;
+						padding: 10px 0;
+						text-align: center;
+					}
+
+					nav .menu-icon {
+						display: block;
+					}
+
+					.content-wrap {
+						left: 50%;
+					}
+
+					.fly-in-text li {
+						font-size: 3em;
+					}
+
+					.fly-in-text-2 li {
+						font-size: 3em;
+					}
+
+					.fa-long-arrow-right {
+						visibility: hidden;
+					}
+
+					nav {
+						padding: 10px;
+					}
+
+					nav.black {
+						padding: 10px;
+					}
+
+					nav .logo {
+						padding: 0;
+						padding-top: 10px;
+					}
+
+					.header { padding: 0;}
+
+					.fly-in-text {
+						font-size: 1.5em;
+						padding: 0;
+					}
+
+					.fly-in-text-2 {
+						font-size: 1.5em;
+						padding: 0;
+					}
+
+					.fly-in-text li {
+						font-size: 2em;
+						padding: 0;
+					}
+
+					.fly-in-text-2 li {
+						font-size: 2em;
+						padding: 0;
+					}
+
+					.btn {
+						width: 100%;
+						height: 50px;
+						margin: 0;
+					}
+
+					.btn p {
+						font-size: 1em;
+					}
+
+					.fa-long-arrow-right {
+						visibility: hidden;
+					}
+
+					.circle {
+					visibility: hidden;
+					}
+
+
+					.C1 {
+						visibility: hidden;
+					}
+
+
+					.circle-small-1 {
+						visibility: hidden;
+					}
+
+					.circle-small-2 {
+						visibility: hidden;
+					}
+
+					.circle-2 {
+						visibility: hidden;
+					}
+
+					.H {
+						visibility: hidden;
+					}
+
+					.I {
+						visibility: hidden;
+					}
+
+					.scissors {
+						visibility: hidden;
+					}
+
+					.crew {
+						visibility: hidden;
+					}
+
+					.C2 {
+						visibility: hidden;
+					}
+
+					section .black-prices .cover-a {
+						visibility: hidden;
+					}
+
+					.G {
+						visibility: hidden;
+					}
+
+					.redken {
+						visibility: hidden;
+					}
+
+					.O {
+						visibility: hidden;
+					}
+
+					.cover-4 {
+						visibility: hidden;
+					}
+
+					.circle-left-white {
+						visibility: hidden;
+					}
+
+					/*---------------------------------*/
+
+					section .heading {
+						padding: 0;
+						margin: 0 20px 50px 20px;
+					}
+
+					section .heading h2 {
+						text-align: center;
+						font-size: 1.5em;
+					}
+
+					.col-2-wrap-1 {
+						padding: 20px;
+						height: auto;
+					}
+
+					section .heading-purple {
+						padding: 10px;
+						margin: 0 auto 0;
+						text-align: center;
+					}
+
+					section .heading-purple h2 {
+						font-size: 1.5em;
+						margin-top: 100px;
+					}
+
+					.text-col-2-purple h2 {
+						font-size: 1em;
+					}
+
+					.col-2-wrap {
+						padding: 25px;
+					}
+
+					.col-2 {
+						display: block;
+						max-width: 100%;
+						margin: 0 auto 0;
+					}
+
+					.text-col-2-purple {
+						padding: 10px;
+					}
+
+					.text-right {
+						position: static;
+						display: block;
+						padding: 10px;
+						width: 100%;
+						background: #000;
+					}
+
+					.text-right h2 {
+						font-size: 1.5em;
+						text-align: center;
+					}
+
+					.text-right h3 {
+						font-size: 1em;
+					}
+
+					.col-right {
+						margin: 0 auto 0;
+						text-align: center;
+					}
+
+					.col-right img {
+						position: static;
+						margin: 0 auto 0;
+						min-height: 300px;
+						min-width: auto;
+					}
+
+					section .purple {
+						padding: 0;
+					}
+
+					section .purple .col-right img {
+							min-height: 100px;
+						}
+
+					.text-right {
+						right: 10px;
+						padding: 10px 10px 100px 10px;
+					}
+
+					.text-right ul {
+						font-size: 1em;
+						line-height: 1em;
+						text-align: left;
+						margin-left: 50px; 
+					}
+
+					.col-wrap {
+						margin: 0 auto 0;
+					}
+
+					.heading-3 h2 {
+						font-size: 1em;
+					}
+
+					.heading-4 {
+						padding: 10px;
+					}
+
+					.heading-4 h2 {
+						font-size: 1.5em;
+					}
+
+					.col-2-wrap-white {
+						padding: 10px;
+					}
+
+					.col-2-white {
+						max-width: 100%;
+						display: block;
+					}
+
+					.col-inside {
+						padding: 10px 10px 0 10px;
+					}
+
+					section .purple-program-of-course .heading > h2 {
+						font-size: 1.5em;
+					}
+
+					section .purple-program-of-course .col-left {
+						display: block;
+						max-width: 500px;
+						margin: 0 auto	0;
+						padding: 10px 10px 0 10px;
+					}
+
+					section .purple-program-of-course .col-inside {
+						padding: 0 0 0 50px;
+					}
+
+					section .purple-program-of-course .col-right {
+						display: block;
+						text-align: left;
+						background: #000;
+						padding: 10px;
+						padding: 10px 10px 50px 10px;
+						max-width: 500px;
+						margin: 0 auto	0;
+					}
+
+					section .black-prices > .heading-black h2 {
+						font-size: 1.5em;
+						padding: 200px 20px 50px 20px;
+					}
+
+					section .black-prices .col-3 {
+						display: block;
+						max-width: 100%;
+					}
+
+					section .black-prices .col-3-ways {
+						display: block;
+						max-width: 100%;
+					}
+
+					section .black-prices .col-3-ways p {
+						padding: 0 10px 50px 10px;
+					}
+
+					section .black-prices .col-3 .square-left {
+						visibility: hidden;
+					}
+
+					section .black-prices .col-3 .square-right {
+						visibility: hidden;
+					}
+
+					section .black-prices .conteiner-3-cols {
+						padding: 0 0 20px 0;
+						text-align: center;
+					}
+
+					section .black-prices .col-3 .col-inside-3-1 ul {
+						position: relative;
+						left: 50%;
+						transform: translateX(-50%);
+						margin-block-start: 1em;
+					    margin-block-end: 1em;
+					    margin-inline-start: 0px;
+					    margin-inline-end: 0px;
+					    padding-inline-start: 0;
+					    text-align: center;
+					}
+
+					section .black-prices .col-3 .col-inside-3-2 p {
+						text-align: center;
+					}
+
+					section .black-prices .col-3 .col-inside-3-1 h3 {
+						font-size: 1em;
+						text-align: center;
+					}
+
+					section .black-prices .col-3 .col-inside-3-2 h3 {
+						font-size: 1em;
+						text-align: center;
+					}
+
+					section .faq {
+						padding: 0;
+					}
+
+					section .model .heading-model {
+						margin: 0 auto 0;
+					}
+
+					section .faq .heading-faq h2 {
+						font-size: 1.5em;
+						text-align: center;
+					}
+
+					section .faq .questions h3 {
+						font-size: 1em;
+						text-align: left;
+						width: 400px;
+						padding: 10px
+					}
+
+					section .faq .questions .down-arrow img {
+						padding-left: 20px;
+					}
+
+					section .white-reviews .space {
+						margin: 0 auto 0;
+					}
+
+
+					.model-form {
+						display: block;
+						position: static;
+						width: 100%;
+					}
+
+					.bottom-form {
+						padding: 20px 0 0 0;
+					}
+
+					.bottom-form h2 {
+						text-align: center;
+					}
+
+					section .model .img-model {
+						position: static;
+						margin: 0 auto 0;
+						padding: 0;
+					}
+
+					section .model .img-model img {
+						margin: 0 auto 0;
+					}
+
+					section .model .heading-model {
+						float: none;
+						text-align: center;
+						padding: 40px;
+					}
+
+					section .model .heading-model h2 {
+						font-size: 1.5em;
+					}
+
+					section .model .img-model {
+						padding: 0;
+					}
+
+					section .purple-big-last .container-4-cols {
+						text-align: center;
+					}
+
+					section .purple-big-last .container-4-cols h2 {
+						font-size: 1.5em;
+						text-align: center;
+						padding: 20px;
+					}
+
+					section .purple-big-last .container-4-cols .col-4 {
+						display: block;
+						width: 100%;
+						margin: 0 auto 0;
+					}
+
+					section .purple-big-last .container-4-cols .col-4 .col-4-inside {
+						margin: 0 auto 0;
+					}
+
+					section .purple-big-last {
+						background: #000;
+					}
+
+					section .purple-big-last .container-4-cols .col-4 .col-4-inside .dash {
+						    margin: 30px auto 10px;
+					}
+
+					section .purple-big-last .address .heading-address h2 {
+						font-size: 1.5em;
+					}
+
+					section .purple-big-last .address .container-3-cols-address .col-3-address {
+						display: block;
+						width: 100%;
+					}
+
+					section .purple-big-last .address .container-3-cols-address .col-3-address .col-3-inside-address {
+						display: block;
+						width: 100%;
+					}
+
+					section .purple-big-last .address .container-3-cols-address .col-3-address li.phone-call {
+						margin: 0;
+					}
+
+					section .instagramm .heading-purple-inst h2 {
+						padding: 20px;
+					}
+
+					section .instagramm .container-4-cols .col-4 {
+						display: block;
+						width: 100%;
+					}
+
+					section .instagramm .container-4-cols {
+						text-align: center;
+					}
+
+					footer p {
+						line-height: 1em;
+					}
+
+					.reviews .heading-4 > h2 {
+						font-size: 1.5em;
+						text-align: center;
+						margin-top: 40px;
+					}
+
+					.reviews .sliderA > div > h3 {
+						width: 300px;
+					}
+
+					.reviews .sliderA > div > p {
+						width: 300px;
+					}
+
+					.reviews .sliderA {
+						height: auto;
+						min-height: 500px;
+					}
+
+					footer .copy {
+						display: block;
+						width: 100%;
+						text-align: center;
+						margin: 10px;
+					}
+
+					footer .privacy {
+						display: block;
+						width: 100%;
+						text-align: center;
+						margin: 10px;
+					}
+
+				}
+
+
+
+				@media (max-width: 860px) {
+				section .bg-gray .col {
+					display: block;
+					width: 100%;
+					height: auto;
+					padding: 30px;
+				}
+
+				.col-2-wrap-white .col-4 {
+					display: block;
+					width: 100%;
+					height: auto;
+					padding: 30px;
+				}
+
+				@media (max-width: 615px) {
+				.phone {
+							display: none;
+						}
+				}		
+
+					@media (max-width: 495px) {
+						nav {
+							padding: 10px;
+						}
+
+						nav.black {
+							padding: 10px;
+						}
+
+						nav .logo {
+							padding: 0;
+							padding-top: 20px;
+							left: 20px;
+						}
+
+						nav.black .logo {
+							left: 20px;
+						}
+
+						.header { padding: 0;}
+
+						.fly-in-text li {
+							font-size: 1em;
+							padding: 0 0 0 5px;
+						}
+
+						.fly-in-text-2 li {
+							font-size: 1em;
+							padding: 0 0 20px 5px;
+						}
+
+						.btn {
+							width: 100%;
+							height: 50px;
+							margin: 0;
+						}
+
+						.btn p {
+							font-size: 1em;
+						}
+
+						.fa-long-arrow-right {
+							visibility: hidden;
+						}
+
+						.circle {
+						visibility: hidden;
+						}
+
+
+						.C1 {
+							visibility: hidden;
+						}
+
+
+						.circle-small-1 {
+							visibility: hidden;
+						}
+
+						.circle-small-2 {
+							visibility: hidden;
+						}
+
+						.circle-2 {
+							visibility: hidden;
+						}
+
+						.H {
+							visibility: hidden;
+						}
+
+						.I {
+							visibility: hidden;
+						}
+
+						.scissors {
+							visibility: hidden;
+						}
+
+						.crew {
+							visibility: hidden;
+						}
+
+						.C2 {
+							visibility: hidden;
+						}
+
+						section .black-prices .cover-a {
+							visibility: hidden;
+						}
+
+						.G {
+							visibility: hidden;
+						}
+
+						.redken {
+							visibility: hidden;
+						}
+
+						.O {
+							visibility: hidden;
+						}
+
+						.cover-4 {
+							visibility: hidden;
+						}
+
+						.circle-left-white {
+							visibility: hidden;
+						}
+
+						section .purple-our-works .heading-our-works h3 {
+							font-size: 1em;
+						}
+
+						/*---------------------------------*/
+
+						section .heading {
+							padding: 0;
+							margin: 0 20px 50px 20px;
+						}
+
+						section .heading h2 {
+							text-align: center;
+							font-size: 1.5em;
+						}
+
+						.col-2-wrap-1 {
+							padding: 20px;
+							height: auto;
+						}
+
+						.col-right img {
+							height: 100px;
+						}
+
+						section .faq .questions h3 {
+							font-size: 1em;
+							text-align: left;
+							width: 270px;
+							padding: 10px
+						}
+
+						section .faq .questions .down-arrow img {
+							padding-left: 10px;
+						}
+
+						section .white-reviews .space {
+							margin: 0;
+						}
+
+						footer {
+							padding: 10px;
+						}
+
+						footer .copy {
+							display: block;
+							width: 100%;
+							text-align: center;
+							margin: 10px;
+						}
+
+						footer .privacy {
+							display: block;
+							width: 100%;
+							text-align: center;
+							margin: 10px;
+						}
+
+						.form-1 .check {
+							bottom: -40px;
+						}
+
+						.container-message {
+							top: 60px;
+						}
+
+
+					}
+
+					@media (max-width: 330px) {
+						.fly-in-text-2 li:nth-child(4) {
+							padding-right: 170px;
+						}
+					}
+
+					
+
+
