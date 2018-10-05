@@ -40,25 +40,37 @@
 			<div class="phone wow fadeIn delay-3s"><i class="fa fa-phone" aria-hidden="true"></i>426-99-72</div>
 		</nav>
 
-			<form class="form-1" id="form-1">
+			<form action="success.html" class="form-1" id="form-1">
 
 				<label class="close-1" id="close-1" for="modal">&#10005;</label>
 				<fieldset class="center-form">
 					<h2>оставьте свои <br> контакты</h2>
 
-				    <input type="text" id="user_name" placeholder="имя" value=""/>
+				    <input class="form-control" type="name" name="username" maxlength="30" value="" id="user_name" placeholder="имя" required />
 				     
-				    <input type="phone" id="user_phone" placeholder="телефон" value=""/>
+				    <input class="form-control" type="tel" name="usephone" maxlength="30" value="" id="user_phone" placeholder="Телефон" required />
 
-				    <input type="button" value="Отправить" id="btn_submit" />
+				    <input type="submit" value="Отправить" id="btn_submit" />
 
 				</fieldset>
 				<p class="check">Нажимая на кнопку «Отправить» Вы соглашаетесь <br> на <a href="https://drive.google.com/file/d/1ER8rQOtM1906OwF3c7cAyru5xQK6TN12/view" target="_blank">обработку персональных данных</a></p>
-			</form><!--/.form-1-->
-			<div class="container-message wow fadeIn delay-1s" id="container-message">
-				<p>Сообщение успешно отправлено!</p>
-			</div>
-			
+			</form><!--/.form-1-->	
+
+			<form action="success2.html" class="form-1" id="form-2">
+
+				<label class="close-1" id="close-2" for="modal">&#10005;</label>
+				<fieldset class="center-form">
+					<h2>подпишитесь на нашу <br> рассылку</h2>
+
+					<input class="form-control" type="name" name="username" maxlength="30" value="" id="user_name3" placeholder="имя" required />
+
+				    <input class="form-control" type="email" name="usermail" maxlength="50" value="" id="user_mail3" placeholder="email" required />
+
+				    <input type="submit" value="Подписаться" id="btn_subscribe" />
+
+				</fieldset>
+				<p class="check">Нажимая на кнопку «Отправить» Вы соглашаетесь <br> на <a href="https://drive.google.com/file/d/1ER8rQOtM1906OwF3c7cAyru5xQK6TN12/view" target="_blank">обработку персональных данных</a></p>
+			</form><!--/.form-2-->
 		
 		<!----------/nav---------->
 	<div class="parallax-group">
@@ -446,7 +458,7 @@
 
 				<div class="col-3-ways">
 					<div class="col-inside-3-ways">
-						<img src="http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/common-thumbs-preview-474h228-card-2-copyffj.png">
+						<img src="http://fosstisru-modx.tw1.ru/assets/images/Nail%20School/icons8-bankovskie-kartyi-64.png">
 					</div>
 					<h3>Оплата халвой</h3>
 					<p>Действительно выгодное предложение по карте рассрочки «Халва» 
@@ -627,21 +639,18 @@
 			</div><!--/.div.container-faq-->
 
 		<div class="model">
-			<form class="model-form wow slideInLeft">
+			<form action="success.html" class="model-form wow slideInLeft">
 				<fieldset class="bottom-form">
 					<h2>запишись моделью на бесплатный маникюр</h2>
 
-				    <input type="text" id="user_name2" value="" placeholder="имя" />
+				    <input type="name" id="user_name2" value="" placeholder="имя" required />
 				     
-				    <input type="phone" id="user_phone2" value="" placeholder="телефон" />
+				    <input type="tel" id="user_phone2" value="" placeholder="телефон" required />
 
-				    <input type="button" value="Отправить" id="btn_bottom" />
+				    <input type="submit" value="Отправить" id="btn_bottom" />
 
 				    <p>Нажимая на кнопку «Отправить» Вы соглашаетесь на <a href="https://drive.google.com/file/d/1ER8rQOtM1906OwF3c7cAyru5xQK6TN12/view" target="_blank">обработку персональных данных</a></p>
 
-				    <div class="container-message2">
-						<p>Сообщение успешно отправлено!</p>
-					</div>
 				</fieldset>
 
 
@@ -793,6 +802,36 @@
 	<script>
 		new WOW().init();
 	</script>
+
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50618038 = new Ya.Metrika2({
+                    id:50618038,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50618038" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 </html>

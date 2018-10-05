@@ -25,28 +25,6 @@ $(window).on('scroll',function() {
 
 /*-----------------------/nav bar-------------------------*/
 
-$(document).on('click', '.block2', function () {
-  window.scrollTo(0, 0);
-});
-
-$(document).on('click', '.block', function () {
-  window.scrollTo(0, 0);
-});
-
-$(document).on('click', '.block3', function () {
-  window.scrollTo(0, 0);
-});
-
-$(document).on('click', '.block4', function () {
-  window.scrollTo(0, 0);
-});
-
-$(document).on('click', '.block5', function () {
-  window.scrollTo(0, 0);
-});
-
-/*-----------------------/click catcher-------------------------*/
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -145,37 +123,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#close-1").click(function(){
-        $("#form-1").hide();
+        $("#form-1").fadeOut(1000);
     });
     $("#btn-main").click(function(){
-        $("#form-1").show();
+        $("#form-1").fadeIn(1000);
     });
 });
 
 $(document).ready(function(){
-    $("#close-2").click(function(){
-        $("#form-1").hide();
+    $("#close-1").click(function(){
+        $("#form-1").fadeOut(1000);
     });
     $("#btn-small-1").click(function(){
-        $("#form-1").show();
-    });
-});
-
-$(document).ready(function(){
-    $("#close-2").click(function(){
-        $("#form-1").hide();
-    });
-    $("#btn-small-2").click(function(){
-        $("#form-1").show();
-    });
-});
-
-$(document).ready(function(){
-    $("#close-2").click(function(){
-        $("#form-1").hide();
-    });
-    $("#btn-small-3").click(function(){
-        $("#form-1").show();
+        $("#form-1").fadeIn(1000);
     });
 });
 
@@ -253,15 +213,6 @@ $(document).ready(function(){
             });
         });
 
-
-$('#btn_submit').on('click', function(){
-    $('.container-message').css({display:'block'});
-});
-
-$('#btn_bottom').on('click', function(){
-    $('.container-message2').css({display:'block'});
-});
-
 //  ----------------------------------------------------
 
 
@@ -277,24 +228,54 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-    $("#btn_submit").click(function(){
-        $("#form-1").hide();
-    });
+//  ----------------------------------------------------
+
+$(this).keydown(function(eventObject){
+    if (eventObject.which == 27)
+        $('#form-1').hide();
 });
 
 //  ----------------------------------------------------
 
 
-function changeMe() {
-    var ele = document.getElementById("item");   
-    ele.className= "hide";
-    setTimeout(function() { ele.style["max-height"] = '0px'; }, 1000);
-}
+$(document).ready(function(){
+            $('#btn_subscribe').click(function(){
+                // собираем данные с формы
+                var user_name3    = $('#user_name3').val();
+                var text_comment3 = $('#user_mail3').val();
+                // отправляем данные
+                $.ajax({
+                    url: "action3.php", // куда отправляем
+                    type: "post", // метод передачи
+                    dataType: "json", // тип передачи данных
+                    data: { // что отправляем
+                        "user_name3":    user_name3,
+                        "user_mail3": text_comment3
+                    },
+                    // после получения ответа сервера
+                    success: function(data){
+                        $('.messages3').html(data.result); // выводим ответ сервера
+                    }
+                });
+            });
+        });
 
 
-$(window).on('scroll',function() {
-    $("#container-message").hide();
+//  ----------------------------------------------------
+
+$(this).keydown(function(eventObject){
+    if (eventObject.which == 27)
+        $('#form-2').fadeOut(1000);
+});
+
+
+
+$(document).ready(function () {
+    setTimeout(function(){ 
+        $("#form-2").fadeIn(1000); }, 26000);
+    $("#close-2").click(function(){
+        $("#form-2").fadeOut(1000);
+    });
 });
 
 
